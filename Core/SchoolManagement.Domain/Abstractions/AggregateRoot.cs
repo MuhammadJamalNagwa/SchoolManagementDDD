@@ -1,5 +1,5 @@
 ﻿namespace SchoolManagement.Domain.Abstractions;
-internal abstract class AggregateRoot<TId> : Entity<TId> where TId : notnull
+public abstract class AggregateRoot<TId> : Entity<TId> where TId : notnull
 {
     private List<IDomainEvent> _domainEvents = new List<IDomainEvent>();
     public IReadOnlyCollection<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();

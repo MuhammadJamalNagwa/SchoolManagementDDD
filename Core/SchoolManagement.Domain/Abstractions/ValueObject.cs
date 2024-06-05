@@ -1,5 +1,5 @@
 ﻿namespace SchoolManagement.Domain.Abstractions;
-internal abstract class ValueObject : IEquatable<ValueObject>
+public abstract class ValueObject : IEquatable<ValueObject>
 {
     public static bool operator ==(ValueObject one, ValueObject two)
     {
